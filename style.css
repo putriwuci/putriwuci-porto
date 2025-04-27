@@ -194,11 +194,13 @@ nav a:hover::after {
 
 /* Jumbotron */
 .jumbotron {
-  background: url('img/putri.jpeg') no-repeat center center;
-  background-size: cover;
-  filter: blur(5px);
+  background:#ffffff; 
+  background-size: cover; 
+  filter: none; 
   position: relative;
   z-index: 0;
+  text-align: center;
+  padding: 3rem 0;
 }
 
 .jumbotron::after {
@@ -208,7 +210,7 @@ nav a:hover::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0); 
   z-index: -1;
 }
 
@@ -288,5 +290,25 @@ nav a:hover::after {
   }
   .navbar-nav .nav-item .nav-link {
     font-size: 0.9rem;
+  }
+}
+ /* Desktop - Set image width to 60% */
+ @media (min-width: 992px) {
+  .fancy-image {
+    width: 40% !important;
+  }
+}
+
+/* Tablet - Set image width to 80% */
+@media (min-width: 768px) and (max-width: 991px) {
+  .fancy-image {
+    width: 80% !important;
+  }
+}
+
+/* Mobile - Set image width to full width */
+@media (max-width: 767px) {
+  .fancy-image {
+    width: 100% !important;
   }
 }
