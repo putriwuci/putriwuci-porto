@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>My Portfolio | Putri Wulan Suci Rahmadhani</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+
+  <!-- Lightbox CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- My Custom CSS -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+
+    .jumbotron {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+    }
+
+    .box img {
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .box img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+
+</head>
+
+<body>
+
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#" style="font-family: 'Poppins', sans-serif;">Putri Wuci</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#projects">Experience & Hobby</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar -->
+
+ <!-- Jumbotron -->
+<section class="jumbotron text-center bg-white">
+  <div class="container">
+    <img src="img/putri.jpeg" alt="Putri Wuci" 
+      class="img-thumbnail mb-4 shadow-lg border border-danger" 
+      style="width: 250px; height: auto; border-radius: 15px; transition: transform 0.3s ease;" 
+      onmouseover="this.style.transform='scale(1.1)'" 
+      onmouseout="this.style.transform='scale(1)'" 
+    />
+    <h1 class="display-3 text-danger fw-bold" style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); font-family: 'Poppins', sans-serif;">
+      Putri Wulan Suci R
+    </h1>
+    <p class="lead text-secondary fw-semibold" style="font-family: 'Poppins', sans-serif;">
+      A passionate student 🌟, dreaming big 💭 & embracing every moment 🌈!
+    </p>
+    <p class="text-muted mt-3" style="font-family: 'Poppins', sans-serif;">
+      <a href="https://www.google.com/maps?q=SMAN+1+PORONG,Sidoarjo" target="_blank" 
+         class="badge bg-danger text-decoration-none" 
+         style="font-size: 1rem;">
+         SMAN 1 PORONG
+      </a> 
+      | 
+      <span class="badge bg-primary" style="font-size: 1rem;">Sidoarjo 🌟</span>
+    </p>
+    <a href="#about" class="btn btn-danger mt-4" 
+       style="border-radius: 25px; padding: 10px 30px; font-size: 1.1rem; text-transform: uppercase;">
+      Let's Get to Know Me! 🔥
+    </a>
+  </div>
+</section>
+<!-- End Jumbotron -->
+
+  <!-- About -->
+  <section id="about" class="bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+          <img src="img/projects/Desain tanpa judul.svg" alt="About Me" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <h2 class="fw-bold mb-4">About Me</h2>
+          <p>Halo teman-teman! Nama saya <strong>Putri Wulan Suci Rahmadhani</strong>. Biasanya teman-teman memanggil saya <strong>Putri</strong>, dan teman dekat saya memanggil saya <strong>Wuci</strong>.</p>
+          <p>Saya lahir pada <strong>4 September 2008</strong> di <strong>Sidoarjo</strong>. Saat ini saya sedang mencari minat dan bakat saya, salah satunya dengan aktif di organisasi Ambalan. Saya berharap bisa menjadi siswa yang berprestasi dan terus berkembang!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About -->
+
+  <!-- Projects -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col">
+        <h2 class="fw-bold">My Experience and Hobby</h2>
+      </div>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <!-- Box 1 -->
+      <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="img/projects/1.jpeg" class="card-img-top" alt="Project 1" data-bs-toggle="modal" data-bs-target="#project1Modal">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Sertifikat</h5>
+            <p class="card-text">Dulu saya suka mengikuti lomba olimpiade.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="img/projects/2.jpeg" class="card-img-top" alt="Project 2" data-bs-toggle="modal" data-bs-target="#project2Modal">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Jogging</h5>
+            <p class="card-text">Saya punya hobi jogging, biasanya hari Minggu bersama teman.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="img/projects/3.jpeg" class="card-img-top" alt="Project 3" data-bs-toggle="modal" data-bs-target="#project3Modal">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Badminton</h5>
+            <p class="card-text">Saya suka bermain badminton saat weekend, terutama jika tidak ada tugas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 4 -->
+      <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="img/projects/ambalan.jpeg" class="card-img-top" alt="Project 4" data-bs-toggle="modal" data-bs-target="#project4Modal">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Ambalan</h5>
+            <p class="card-text">Saya ikut organisasi Ambalan untuk menambah pengalaman dan wawasan.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End Projects -->
+
+<!-- Contact -->
+<section id="contact" class="bg-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="text-danger fw-bold" style="font-family: 'Poppins', sans-serif;">Let's Connect! 🚀</h2>
+      <p class="text-secondary" style="font-family: 'Poppins', sans-serif;">Punya pertanyaan atau ingin ngobrol santai? Isi form di bawah ini.</p>
+    </div>
+
+    <form action="" method="POST">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan Nama Anda">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Masukkan Email Anda">
+        </div>
+        <div class="col-12 mb-3">
+          <label for="message" class="form-label">Your Message</label>
+          <textarea class="form-control" id="message" name="message" rows="4" placeholder="Masukkan Pesan Anda"></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-danger" style="font-size: 1.2rem;">Send Message</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+<!-- End Contact -->
+
+<!-- Footer -->
+<footer class="bg-danger text-white text-center py-3">
+  <p class="mb-0" style="font-family: 'Poppins', sans-serif;">© 2025 Putri Wulan Suci Rahmadhani. All rights reserved.</p>
+</footer>
+<!-- End Footer -->
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Lightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
